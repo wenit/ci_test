@@ -12,6 +12,7 @@ before_script: ## 根据你所用的主题和自定义的不同，这里会有�
 
 script: 
     - docsite build # generate static files
+    - pwd
     - ls -l
 
 deploy:
@@ -19,7 +20,7 @@ deploy:
     repo: wenit/wenit.github.io
     skip_cleanup: true
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    keep_history: true
+    keep_history: false
     file: 
         - index.html
         - 404.html
