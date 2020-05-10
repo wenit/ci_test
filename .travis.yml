@@ -15,9 +15,17 @@ script:
 
 deploy:
     provider: pages
+    repo: wenit/wenit.github.io
     skip_cleanup: true
     github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep_history: true
+    local_dir: 
+        - index.html
+        - 404.html
+        - build
+        - img
+        - zh-cn
+        - en-us
     on:
         branch: master
-    target_branch: page
+    target_branch: master
