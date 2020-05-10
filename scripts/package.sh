@@ -4,7 +4,7 @@
 # 作者		：远夕
 # 创建时间	：2020年5月10日
 
-echo [`date`]部署完成.
+echo [`date`] 开始生成部署文件.
 rm -rf _deploy
 mkdir _deploy
 
@@ -15,4 +15,4 @@ mv en-us _deploy
 mv build _deploy
 mv img _deploy
 
-echo [`date`]部署完成.
+echo [`date`] 生成部署文件完成.
